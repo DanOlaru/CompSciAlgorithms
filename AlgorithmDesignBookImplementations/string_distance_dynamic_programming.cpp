@@ -20,7 +20,7 @@ typedef struct {
 } cell;
 
 //cell m[MAXLEN+1][MAXLEN+1];
-cell m[100][100];
+cell m[101][101];
 
 void row_init(int i) {
     m[0][i].cost = i;
@@ -45,13 +45,13 @@ void goal_cell(char *s, char *t, int *i, int *j)
 
 
 void insert_out(char *t, int j)
-    {
-            printf("I");
+{
+    printf("I");
 }
 
 void delete_out(char *s, int i)
  {
-         printf("D");
+    printf("D");
 }
 
 void match_out(char *s, char *t,int i, int j) {
@@ -59,24 +59,37 @@ void match_out(char *s, char *t,int i, int j) {
     else printf("S");
 }
 
-void reconstruct_path(char *s, char *t, int i, int j)
+
+void print_matrix() {
+    for (int i=0; i<14; i++) {
+        for (int j=0; j<14; j++) {
+            cout << m[i][j].parent;
+            
+        }
+        cout << endl;
+    }
+}
+
+void reconstruct_path(char *s, char *t, int i, int j) //TODO: doesn't return right result
  {
-         if (m[i][j].parent == -1) return;
-         if (m[i][j].parent == MATCH) {
-                 reconstruct_path(s,t,i-1,j-1);
-                 match_out(s, t, i, j);
-                 return;
-         }
+     if (m[i][j].parent == -1) return;
+     if (m[i][j].parent == MATCH) {
+             reconstruct_path(s,t,i-1,j-1);
+             match_out(s, t, i, j);
+             return;
+     }
+    
     if (m[i][j].parent == INSERT) {
         reconstruct_path(s,t,i,j-1);
         insert_out(t,j);
         return;
-                 }
-                 if (m[i][j].parent == DELETE) {
-                         reconstruct_path(s,t,i-1,j);
-                         delete_out(s,i);
-                         return;
-        }
+    }
+    
+     if (m[i][j].parent == DELETE) {
+             reconstruct_path(s,t,i-1,j);
+             delete_out(s,i);
+             return;
+    }
 }
 
 int string_compare_dynamic_programming(char *s, char *t)
@@ -97,6 +110,7 @@ int string_compare_dynamic_programming(char *s, char *t)
             for (k=INSERT; k<=DELETE; k++)
                 if (opt[k] < m[i][j].cost) {
                     m[i][j].cost = opt[k];
+                    m[i][j].parent = k;
                 }
         }
     }
