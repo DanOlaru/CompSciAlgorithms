@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6458D6A22AA3E6AB000A8D80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6458D6A12AA3E6AB000A8D80 /* main.cpp */; };
 		6458D6AA2AA3E7F1000A8D80 /* string_distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6458D6A82AA3E7F1000A8D80 /* string_distance.cpp */; };
-		6485EEFE2AB5A6F900C5FA47 /* HeapSort1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6485EEFC2AB5A6F900C5FA47 /* HeapSort1.cpp */; };
+		6485EEFE2AB5A6F900C5FA47 /* heap_sort1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6485EEFC2AB5A6F900C5FA47 /* heap_sort1.cpp */; };
 		64CF01352AA48FE00012A3C5 /* string_distance_dynamic_programming.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 64CF01332AA48FE00012A3C5 /* string_distance_dynamic_programming.cpp */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +30,9 @@
 		6458D6A12AA3E6AB000A8D80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6458D6A82AA3E7F1000A8D80 /* string_distance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = string_distance.cpp; sourceTree = "<group>"; };
 		6458D6A92AA3E7F1000A8D80 /* string_distance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = string_distance.hpp; sourceTree = "<group>"; };
-		6485EEFC2AB5A6F900C5FA47 /* HeapSort1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSort1.cpp; sourceTree = "<group>"; };
-		6485EEFD2AB5A6F900C5FA47 /* HeapSort1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HeapSort1.hpp; sourceTree = "<group>"; };
+		6485EEFC2AB5A6F900C5FA47 /* heap_sort1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = heap_sort1.cpp; sourceTree = "<group>"; };
+		6485EEFD2AB5A6F900C5FA47 /* heap_sort1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = heap_sort1.hpp; sourceTree = "<group>"; };
+		649F2B2A2AC04F1F00739512 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 		64CF01332AA48FE00012A3C5 /* string_distance_dynamic_programming.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = string_distance_dynamic_programming.cpp; sourceTree = "<group>"; };
 		64CF01342AA48FE00012A3C5 /* string_distance_dynamic_programming.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = string_distance_dynamic_programming.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,13 +67,14 @@
 		6458D6A02AA3E6AB000A8D80 /* AlgorithmDesignBookImplementations */ = {
 			isa = PBXGroup;
 			children = (
+				649F2B2A2AC04F1F00739512 /* resources */,
 				64CF01332AA48FE00012A3C5 /* string_distance_dynamic_programming.cpp */,
 				64CF01342AA48FE00012A3C5 /* string_distance_dynamic_programming.hpp */,
 				6458D6A12AA3E6AB000A8D80 /* main.cpp */,
 				6458D6A82AA3E7F1000A8D80 /* string_distance.cpp */,
 				6458D6A92AA3E7F1000A8D80 /* string_distance.hpp */,
-				6485EEFC2AB5A6F900C5FA47 /* HeapSort1.cpp */,
-				6485EEFD2AB5A6F900C5FA47 /* HeapSort1.hpp */,
+				6485EEFC2AB5A6F900C5FA47 /* heap_sort1.cpp */,
+				6485EEFD2AB5A6F900C5FA47 /* heap_sort1.hpp */,
 			);
 			path = AlgorithmDesignBookImplementations;
 			sourceTree = "<group>";
@@ -135,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CF01352AA48FE00012A3C5 /* string_distance_dynamic_programming.cpp in Sources */,
-				6485EEFE2AB5A6F900C5FA47 /* HeapSort1.cpp in Sources */,
+				6485EEFE2AB5A6F900C5FA47 /* heap_sort1.cpp in Sources */,
 				6458D6A22AA3E6AB000A8D80 /* main.cpp in Sources */,
 				6458D6AA2AA3E7F1000A8D80 /* string_distance.cpp in Sources */,
 			);

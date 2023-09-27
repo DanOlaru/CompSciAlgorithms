@@ -3,7 +3,6 @@
 //  AlgorithmDesignBookImplementations
 //
 //  Created by Dan Olaru on 9/3/23.
-//
 
 #include "string_distance_dynamic_programming.hpp"
 
