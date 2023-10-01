@@ -1,10 +1,3 @@
-//
-//  heap_sort_dan.cpp
-//  AlgorithmDesignBookImplementations
-//
-//  Created by Dan Olaru on 10/1/23.
-//
-
 #include "heap_sort_dan.hpp"
 #include <stdio.h>
 #include <fstream>
@@ -73,13 +66,13 @@ void make_heap(Heap heap, int heapSize) {
     }
 }
 
-void heap_sort_local(Heap heap, int heapSize) {
+void heap_sort_dan(Heap heap, int heapSize) {
     make_heap(heap, heapSize);
     
     for (int i = heapSize-1; i >= 1;) {
         heap[i] = (heap[i]^heap[0])^(heap[0]=heap[i]);
         
-        sift_custom(heap, i--, 0);
+        sift_custom(heap, --i, 0);
     }
 }
 
@@ -95,6 +88,6 @@ void read_input() {
         }
     }
     
-    heap_sort_local(myHeap, countVariable);
+    heap_sort_dan(myHeap, countVariable);
     write_output();
 }
