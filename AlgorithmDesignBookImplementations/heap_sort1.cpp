@@ -101,25 +101,21 @@ int heap_search_recursive(Heap heap, int n, int quarry, int index = 0) {
     return result;
 }
 
-void heap_sort(Heap heap, int n) {
-    build_heap(heap, n);
-    
-    for (int i = n; i>=1;) {
-//        int temp = heap[i];
-//        heap[i] = heap[1];
-//        heap[1] = temp;
-        
-        heap[1] = (heap[1] ^ heap[i]) ^ (heap[i] = heap[1]);  //XOR variable swapping
-        
-        sift(heap, --i, 1);
-    }
-}
-
 void print_data(Heap heap, int arrayLength) {
     for(int i = 1; i <= arrayLength; i++) {
         cout<< H[i] << " ";
     }
     cout << endl;
+}
+
+void heap_sort(Heap heap, int n) {
+    build_heap(heap, n);
+
+    for (int i = n; i>=1;) {
+        heap[1] = (heap[1] ^ heap[i]) ^ (heap[i] = heap[1]);  //XOR variable swapping
+        
+        sift(heap, --i, 1);
+    }
 }
 
 
@@ -145,6 +141,5 @@ void read_data() {
     heap_sort(H, n);
     
     print_data(H, n);
-    
 }
 

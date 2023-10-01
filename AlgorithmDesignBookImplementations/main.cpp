@@ -12,6 +12,7 @@ using namespace std;
 #include "string_distance_dynamic_programming.hpp"
 
 #include "heap_sort1.hpp"
+#include "heap_sort_dan.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -30,8 +31,10 @@ int main(int argc, const char * argv[]) {
 //    print_matrix();
 //    reconstruct_path(stringA, stringB, 14, 14);
     
-    read_data();
-    cout << endl;
+//    read_data();
+//    cout << endl;
+    
+    read_input();
     
     return 0;
 }

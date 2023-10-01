@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6430E3DB2AC997AC003577F3 /* heap_sort_dan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6430E3D92AC997AC003577F3 /* heap_sort_dan.cpp */; };
 		6458D6A22AA3E6AB000A8D80 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6458D6A12AA3E6AB000A8D80 /* main.cpp */; };
 		6458D6AA2AA3E7F1000A8D80 /* string_distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6458D6A82AA3E7F1000A8D80 /* string_distance.cpp */; };
 		6485EEFE2AB5A6F900C5FA47 /* heap_sort1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6485EEFC2AB5A6F900C5FA47 /* heap_sort1.cpp */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6430E3D92AC997AC003577F3 /* heap_sort_dan.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = heap_sort_dan.cpp; sourceTree = "<group>"; };
+		6430E3DA2AC997AC003577F3 /* heap_sort_dan.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = heap_sort_dan.hpp; sourceTree = "<group>"; };
 		6458D69E2AA3E6AB000A8D80 /* AlgorithmDesignBookImplementations */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmDesignBookImplementations; sourceTree = BUILT_PRODUCTS_DIR; };
 		6458D6A12AA3E6AB000A8D80 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6458D6A82AA3E7F1000A8D80 /* string_distance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = string_distance.cpp; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				6458D6A92AA3E7F1000A8D80 /* string_distance.hpp */,
 				6485EEFC2AB5A6F900C5FA47 /* heap_sort1.cpp */,
 				6485EEFD2AB5A6F900C5FA47 /* heap_sort1.hpp */,
+				6430E3D92AC997AC003577F3 /* heap_sort_dan.cpp */,
+				6430E3DA2AC997AC003577F3 /* heap_sort_dan.hpp */,
 			);
 			path = AlgorithmDesignBookImplementations;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6430E3DB2AC997AC003577F3 /* heap_sort_dan.cpp in Sources */,
 				64CF01352AA48FE00012A3C5 /* string_distance_dynamic_programming.cpp in Sources */,
 				6485EEFE2AB5A6F900C5FA47 /* heap_sort1.cpp in Sources */,
 				6458D6A22AA3E6AB000A8D80 /* main.cpp in Sources */,
