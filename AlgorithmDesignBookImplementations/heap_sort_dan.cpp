@@ -15,7 +15,7 @@ typedef int Heap[10001];
 
 
 Heap myHeap;
-int countVariable = -1;
+int countVariable = 0;
 
 void write_output() {
     ofstream outputFile;
@@ -49,10 +49,7 @@ void sift_custom(Heap heap, int heapSize, int k) {
     
     
     while (maxChildPosition) {
-        int temp = heap[k];
-        heap[k] = heap[maxChildPosition];
-        heap[maxChildPosition] = temp;
-        
+        heap[k]=(heap[k]^heap[maxChildPosition])^(heap[maxChildPosition]=heap[k]);
         k = maxChildPosition;
         
         if ((k << 1) < heapSize) {
@@ -80,9 +77,7 @@ void heap_sort_local(Heap heap, int heapSize) {
     make_heap(heap, heapSize);
     
     for (int i = heapSize-1; i >= 1;) {
-        int temp = heap[i];
-        heap[i] = heap[0];
-        heap[0] = temp;
+        heap[i] = (heap[i]^heap[0])^(heap[0]=heap[i]);
         
         sift_custom(heap, i--, 0);
     }
@@ -96,7 +91,7 @@ void read_input() {
     if (inputFile.is_open()) {
         while(inputFile.good()) {
             inputFile >> token;
-            myHeap[++countVariable] = stoi(token);
+            myHeap[countVariable++] = stoi(token);
         }
     }
     
